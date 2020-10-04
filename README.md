@@ -11,8 +11,8 @@
 
 > Currently, it has two buttons.
 
-> One of them activates a service that is going to run even if you kill the application and the other stops it.
-> The service is then reading the last 3 SMS on your inbox and sends them to the specified mail account for automation purposes.
+> One of them activates a service that is going to run even if you kill the application. If pressed, the other button stops it.
+> The service is reading the last 3 SMS on your inbox and sends them to the specified mail account for automation purposes.
 > Unless its service gets stopped (which it can get via stop services button), it will continue to send the latest 3 SMS per 20 mins.
 > It uses JavaMail API to send the mail.
 > You have to have a gmail account to send mail.
