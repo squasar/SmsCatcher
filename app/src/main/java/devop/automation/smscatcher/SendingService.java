@@ -103,6 +103,7 @@ public class SendingService extends Service {
     }
     @Override
     public boolean onUnbind(Intent intent) {
+        this.serhand.removeCallbacks(this.serrun);
         this.handler.removeCallbacks(this.runnable);
         return true;
     }
