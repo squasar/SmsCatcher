@@ -30,7 +30,7 @@ public class SmsReader {
                 if(limit>totalSMS){
                     limit = totalSMS;
                 }
-                for (int j = 0; j < totalSMS || limit>0; j++) {
+                for (int j = 0; j < totalSMS && limit>0; j++) {
                     String smsDate = c.getString(c.getColumnIndexOrThrow(Telephony.Sms.DATE));
                     String number = c.getString(c.getColumnIndexOrThrow(Telephony.Sms.ADDRESS));
                     String body = c.getString(c.getColumnIndexOrThrow(Telephony.Sms.BODY));
